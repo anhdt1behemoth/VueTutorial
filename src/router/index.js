@@ -32,6 +32,16 @@ const routes = [
     path: '/lifecycle1',
     name: 'lifecycle1',
     component: () => import('../views/LifeCycle1View.vue')
+  },
+  {
+    path: '/computed',
+    name: 'computed',
+    component: () => import('../views/ComputedView.vue')
+  },
+  {
+    path: '/methods',
+    name: 'methods',
+    component: () => import('../views/MethodsView.vue')
   }
 ]
 
