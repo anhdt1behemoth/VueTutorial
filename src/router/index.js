@@ -42,6 +42,11 @@ const routes = [
     path: '/methods',
     name: 'methods',
     component: () => import('../views/MethodsView.vue')
+  },
+  {
+    path: '/databinding',
+    name: '/databinding',
+    component: () => import('../views/DataBindding.vue')
   }
 ]
 

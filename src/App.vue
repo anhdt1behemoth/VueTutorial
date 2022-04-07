@@ -4,10 +4,11 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/contact">Contact</router-link> |
-      <router-link to="/lifecycle">LifeCycle</router-link> |
-      <router-link to="/lifecycle1">LifeCycle1</router-link> |
+      <router-link to="/lifecycle/tuananh">LifeCycle</router-link> |
+      <router-link to="/lifecycle1/tuananh2">LifeCycle1</router-link> |
       <router-link to="/computed">Computed</router-link> |
-      <router-link to="/methods">Methods</router-link>
+      <router-link to="/methods">Methods</router-link> |
+      <router-link to="/databinding">Data Binding</router-link>
     </nav>
     <router-view/>
   </div>
