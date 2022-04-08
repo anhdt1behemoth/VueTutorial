@@ -8,7 +8,8 @@
       <router-link to="/lifecycle1/tuananh2">LifeCycle1</router-link> |
       <router-link to="/computed">Computed</router-link> |
       <router-link to="/methods">Methods</router-link> |
-      <router-link to="/databinding">Data Binding</router-link>
+      <router-link to="/databinding">Data Binding</router-link> |
+      <router-link to='/settings'>Nested Name View</router-link>
     </nav>
     <ul>
       <li>

@@ -2,6 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import UserPost from '../views/UserPost.vue'
+import UserSettings from '../views/NestedNamedView/UserSettings.vue'
+import UserEmailsSubscripts from '../views/NestedNamedView/UserEmailsSubscriptions.vue'
+import UserProfile from '../views/NestedNamedView/UserProfile.vue'
+import UserProfilePreview from '../views/NestedNamedView/UserProfilePreview.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -51,6 +56,23 @@ const routes = [
   {
     path: '/users/:username/posts/:postId',
     component: UserPost
+  },
+  {
+    path: '/settings',
+    component: UserSettings,
+    children: [
+      {
+        path: 'emails',
+        component: UserEmailsSubscripts
+      },
+      {
+        path: 'profiles',
+        components: {
+          default: UserProfile,
+          helper: UserProfilePreview
+        }
+      }
+    ]
   }
 ]
 
