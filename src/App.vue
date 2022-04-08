@@ -10,6 +10,14 @@
       <router-link to="/methods">Methods</router-link> |
       <router-link to="/databinding">Data Binding</router-link>
     </nav>
+    <ul>
+      <li>
+        <router-link to="/users/eduardo/posts/1">/users/eduardo/posts/1</router-link>
+      </li>
+      <li>
+        <router-link to="/users/eduardo/posts/20">/users/eduardo/posts/20</router-link>
+      </li>
+    </ul>
     <router-view/>
   </div>
 </template>

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import UserPost from '../views/UserPost.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -47,6 +47,10 @@ const routes = [
     path: '/databinding',
     name: '/databinding',
     component: () => import('../views/DataBindding.vue')
+  },
+  {
+    path: '/users/:username/posts/:postId',
+    component: UserPost
   }
 ]
 
