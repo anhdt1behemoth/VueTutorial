@@ -6,6 +6,10 @@ import UserSettings from '../views/NestedNamedView/UserSettings.vue'
 import UserEmailsSubscripts from '../views/NestedNamedView/UserEmailsSubscriptions.vue'
 import UserProfile from '../views/NestedNamedView/UserProfile.vue'
 import UserProfilePreview from '../views/NestedNamedView/UserProfilePreview.vue'
+import UserNested from '../views/Nested Views/UserNested.vue'
+import UserHome from '../views/Nested Views/UserHome.vue'
+import UserViewsProfile from '../views/Nested Views/UserProfile.vue'
+import UserPosts from '../views/Nested Views/UserPosts.vue'
 
 Vue.use(VueRouter)
 
@@ -71,6 +75,17 @@ const routes = [
           default: UserProfile,
           helper: UserProfilePreview
         }
+      },
+      {
+        path: '/user/:username',
+        component: UserNested,
+        children: [
+          { path: '', component: UserHome },
+
+          { path: 'profile', component: UserViewsProfile },
+
+          { path: 'posts', component: UserPosts }
+        ]
       }
     ]
   }

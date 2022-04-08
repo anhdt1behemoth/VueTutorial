@@ -10,6 +10,7 @@
       <router-link to="/methods">Methods</router-link> |
       <router-link to="/databinding">Data Binding</router-link> |
       <router-link to='/settings'>Nested Name View</router-link>
+      <router-link to=''></router-link>
     </nav>
     <ul>
       <li>
@@ -19,6 +20,17 @@
         <router-link to="/users/eduardo/posts/20">/users/eduardo/posts/20</router-link>
       </li>
     </ul>
+    <h1>Nested Views</h1>
+  <p>
+    <router-link to="/users/eduardo">/users/eduardo</router-link>
+    <br />
+    <router-link to="/users/eduardo/profile"
+      >/users/eduardo/profile</router-link
+    >
+    <br />
+    <router-link to="/users/eduardo/posts">/users/eduardo/posts</router-link>
+  </p>
+  <router-view></router-view>
     <router-view/>
   </div>
 </template>
