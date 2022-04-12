@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <nav>
+      <GoBack/>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/contact">Contact</router-link> |
@@ -9,8 +10,8 @@
       <router-link to="/computed">Computed</router-link> |
       <router-link to="/methods">Methods</router-link> |
       <router-link to="/databinding">Data Binding</router-link> |
-      <router-link to='/settings'>Nested Name View</router-link>
-      <router-link to=''></router-link>
+      <router-link to='/settings'>Nested Name View</router-link> |
+      <router-link to='/users/eduardo'>Nesteds View</router-link>
     </nav>
     <ul>
       <li>
@@ -35,6 +36,12 @@
   </div>
 </template>
 
+<script>
+import GoBack from './views/GoBack.vue'
+export default {
+  components: { GoBack }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

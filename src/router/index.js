@@ -77,7 +77,7 @@ const routes = [
         }
       },
       {
-        path: '/user/:username',
+        path: '/users/:username',
         component: UserNested,
         children: [
           { path: '', component: UserHome },
