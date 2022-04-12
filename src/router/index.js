@@ -10,7 +10,10 @@ import UserNested from '../views/Nested Views/UserNested.vue'
 import UserHome from '../views/Nested Views/UserHome.vue'
 import UserViewsProfile from '../views/Nested Views/UserProfile.vue'
 import UserPosts from '../views/Nested Views/UserPosts.vue'
-
+import Brazil from '../views/Travel/BrazilView.vue'
+import Jamaica from '../views/Travel/JamaicaView.vue'
+import Panama from '../views/Travel/PanamaView.vue'
+import Hawaii from '../views/Travel/HawaiiView.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -75,6 +78,18 @@ const routes = [
           default: UserProfile,
           helper: UserProfilePreview
         }
+      },
+      {
+        path: '/brazil', component: Brazil
+      },
+      {
+        path: '/jamaica', component: Jamaica
+      },
+      {
+        path: '/panama', component: Panama
+      },
+      {
+        path: '/hawaii', component: Hawaii
       },
       {
         path: '/users/:username',

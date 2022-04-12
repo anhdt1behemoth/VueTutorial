@@ -11,7 +11,10 @@
       <router-link to="/methods">Methods</router-link> |
       <router-link to="/databinding">Data Binding</router-link> |
       <router-link to='/settings'>Nested Name View</router-link> |
-      <router-link to='/users/eduardo'>Nesteds View</router-link>
+      <router-link to='/brazil'>Brazil</router-link> |
+      <router-link to='/jamaica'>Jamaica</router-link> |
+      <router-link to='/panama'>Panama</router-link> |
+      <router-link to='/hawaii'>Hawaii</router-link>
     </nav>
     <ul>
       <li>
