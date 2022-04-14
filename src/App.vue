@@ -20,6 +20,8 @@
       <router-link to='/life'>LifeCycleView</router-link> |
       <router-link to='/watchC'>Watcher</router-link> |
       <router-link to='/componentT'>Component</router-link> |
+      <router-link to='/props'>ComponentD</router-link> |
+      <router-link to='/shop'>Shop</router-link> |
     </nav>
     <ul>
       <li>

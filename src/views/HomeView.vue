@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     HomePage
-   <router-link to='/login' tag="button">button</router-link>
+   <button @click="$router.push('/login')">Button</button>
   </div>
 </template>
 

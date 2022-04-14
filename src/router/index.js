@@ -49,6 +49,10 @@ const routes = [
     component: () => import('../views/LifeCycleView.vue')
   },
   {
+    path: '/shop',
+    component: () => import('../views/shopTest/Shop-Item.vue')
+  },
+  {
     path: '/lifecycle1',
     name: 'lifecycle1',
     component: () => import('../views/LifeCycle1View.vue')
@@ -99,6 +103,14 @@ const routes = [
       {
         path: 'emails',
         component: UserEmailsSubscripts
+      },
+      {
+        path: '/props',
+        component: () => import('../views/ComponentTest/ComponentProps.vue')
+      },
+      {
+        path: '/propsvue',
+        component: () => import('../views/ComponentTest/ComponentProps.vue')
       },
       {
         path: 'profiles',
