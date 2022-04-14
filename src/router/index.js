@@ -21,6 +21,7 @@ import HomeUser from '../views/Usertest/HomeUser'
 import Login from '../views/LoginView'
 import Life from '../views/Lifecycle/LifecycleView.vue'
 import Watcher from '../views/Watcher/WatcherView1.vue'
+import Component1 from '../views/ComponentTest/componentTest.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -82,6 +83,14 @@ const routes = [
   {
     path: '/users/:username/posts/:postId',
     component: UserPost
+  },
+  {
+    path: '/componentT',
+    component: Component1
+  },
+  {
+    path: '/lifecycleDes',
+    component: () => import('../views/Lifecycle/LifecycleDes.vue')
   },
   {
     path: '/settings',

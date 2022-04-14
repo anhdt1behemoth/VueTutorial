@@ -19,7 +19,7 @@
       <router-link to='/user1'>UserTest</router-link> |
       <router-link to='/life'>LifeCycleView</router-link> |
       <router-link to='/watchC'>Watcher</router-link> |
-
+      <router-link to='/componentT'>Component</router-link> |
     </nav>
     <ul>
       <li>

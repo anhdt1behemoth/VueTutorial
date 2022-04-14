@@ -3,6 +3,7 @@
     <button @click="mutateDeeply">Button</button>
     <button @click="$router.push('/lifecycleC')">Next</button>
     <button @click="$router.push('/lifecycle1view')">NextLife</button>
+    <button @click="$router.push('/lifecycleDes')">NextLifeDes</button>
 </div>
 </template>
 
