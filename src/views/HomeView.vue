@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     HomePage
+   <router-link to='/login' tag="button">button</router-link>
   </div>
 </template>
 
@@ -9,7 +10,7 @@
 
 export default {
   name: 'HomeView',
-  components: {
-  }
+  components: { }
+
 }
 </script>

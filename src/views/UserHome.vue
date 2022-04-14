@@ -1,3 +1,6 @@
 <template>
-    <div>Home</div>
+    <div>Home
+        <button >login</button>
+    </div>
+ 
 </template>

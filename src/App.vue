@@ -14,7 +14,12 @@
       <router-link to='/brazil'>Brazil</router-link> |
       <router-link to='/jamaica'>Jamaica</router-link> |
       <router-link to='/panama'>Panama</router-link> |
-      <router-link to='/hawaii'>Hawaii</router-link>
+      <router-link to='/hawaii'>Hawaii</router-link> |
+      <router-link to='/user'>UserTest</router-link> |
+      <router-link to='/user1'>UserTest</router-link> |
+      <router-link to='/life'>LifeCycleView</router-link> |
+      <router-link to='/watchC'>Watcher</router-link> |
+
     </nav>
     <ul>
       <li>
@@ -40,6 +45,7 @@
 </template>
 
 <script>
+
 import GoBack from './views/GoBack.vue'
 export default {
   components: { GoBack }

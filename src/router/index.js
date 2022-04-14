@@ -14,6 +14,13 @@ import Brazil from '../views/Travel/BrazilView.vue'
 import Jamaica from '../views/Travel/JamaicaView.vue'
 import Panama from '../views/Travel/PanamaView.vue'
 import Hawaii from '../views/Travel/HawaiiView.vue'
+import UserTest from '../views/Usertest/UserTest'
+import UserRou from '../views/Usertest/UserRou'
+import ProfileUser from '../views/Usertest/ProfileUser'
+import HomeUser from '../views/Usertest/HomeUser'
+import Login from '../views/LoginView'
+import Life from '../views/Lifecycle/LifecycleView.vue'
+import Watcher from '../views/Watcher/WatcherView1.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -46,14 +53,26 @@ const routes = [
     component: () => import('../views/LifeCycle1View.vue')
   },
   {
+    path: '/lifecycleC',
+    component: () => import('../views/Lifecycle/LifecycleVue.vue')
+  },
+  {
     path: '/computed',
     name: 'computed',
     component: () => import('../views/ComputedView.vue')
   },
   {
+    path: '/watcher1',
+    component: Watcher
+  },
+  {
     path: '/methods',
     name: 'methods',
     component: () => import('../views/MethodsView.vue')
+  },
+  {
+    path: '/watchC',
+    component: () => import('../views/Watcher/watcheView.vue')
   },
   {
     path: '/databinding',
@@ -79,6 +98,20 @@ const routes = [
           helper: UserProfilePreview
         }
       },
+      { path: '/login', component: Login },
+      {
+        path: 'user/:id',
+        component: UserTest,
+        children: [
+          { path: '', component: UserRou },
+          { path: '/profile', component: ProfileUser },
+          { path: '/home', component: HomeUser }
+        ]
+      },
+      {
+        path: '/lifecycle1view',
+        component: () => import('../views/Lifecycle/LifecycleVue1.vue')
+      },
       {
         path: '/brazil', component: Brazil
       },
@@ -90,6 +123,9 @@ const routes = [
       },
       {
         path: '/hawaii', component: Hawaii
+      },
+      {
+        path: '/life', component: Life
       },
       {
         path: '/users/:username',
