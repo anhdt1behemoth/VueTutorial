@@ -11,6 +11,7 @@
       <router-link to="/methods">Methods</router-link> |
       <router-link to="/databinding">Data Binding</router-link> |
       <router-link to='/settings'>Nested Name View</router-link> |
+      <br/>
       <router-link to='/brazil'>Brazil</router-link> |
       <router-link to='/jamaica'>Jamaica</router-link> |
       <router-link to='/panama'>Panama</router-link> |
@@ -22,6 +23,8 @@
       <router-link to='/componentT'>Component</router-link> |
       <router-link to='/props'>ComponentD</router-link> |
       <router-link to='/shop'>Shop</router-link> |
+      <router-link to='/hide'>Shop</router-link> |
+
     </nav>
     <ul>
       <li>

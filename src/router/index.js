@@ -97,6 +97,10 @@ const routes = [
     component: () => import('../views/Lifecycle/LifecycleDes.vue')
   },
   {
+    path: '/hide',
+    component: () => import('../views/ComputedVue/ComputedView.vue')
+  },
+  {
     path: '/settings',
     component: UserSettings,
     children: [
