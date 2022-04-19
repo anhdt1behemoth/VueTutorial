@@ -24,7 +24,8 @@
       <router-link to='/props'>ComponentD</router-link> |
       <router-link to='/shop'>Shop</router-link> |
       <router-link to='/hide'>Shop</router-link> |
-
+      <router-link to='/renProp'>RenderProps</router-link> |
+      <router-link to='/property'>Property</router-link> |
     </nav>
     <ul>
       <li>

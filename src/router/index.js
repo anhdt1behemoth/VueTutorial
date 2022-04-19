@@ -153,6 +153,14 @@ const routes = [
         path: '/life', component: Life
       },
       {
+        path: '/renProp',
+        component: () => import('../views/Render/RenderProp.vue')
+      },
+      {
+        path: '/property',
+        component: () => import('../views/ComponentTest/ExampleComponent.vue')
+      },
+      {
         path: '/users/:username',
         component: UserNested,
         children: [

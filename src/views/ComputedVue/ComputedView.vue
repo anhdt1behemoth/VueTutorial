@@ -42,7 +42,7 @@ export default {
       this.todos.push({ id: id++, text: this.newTodo, done: false })
       this.newTodo = ''
     },
-    remove (todo) {
+    removeTodo (todo) {
       this.todos = this.todos.filter((t) => t !== todo)
     }
   }
