@@ -101,6 +101,14 @@ const routes = [
     component: () => import('../views/ComputedVue/ComputedView.vue')
   },
   {
+    path: '/lifecycleUp',
+    component: () => import('../views/Lifecycle/LifecycleUpdate.vue')
+  },
+  {
+    path: '/lifecycleDestroys',
+    component: () => import('../views/Lifecycle/LifecycleDestroy.vue')
+  },
+  {
     path: '/settings',
     component: UserSettings,
     children: [
@@ -115,6 +123,10 @@ const routes = [
       {
         path: '/propsvue',
         component: () => import('../views/ComponentTest/ComponentProps.vue')
+      },
+      {
+        path: '/props1',
+        component: () => import('../views/ComponentTest/AccountInfo.vue')
       },
       {
         path: 'profiles',

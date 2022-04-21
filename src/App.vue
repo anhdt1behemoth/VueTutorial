@@ -27,6 +27,10 @@
       <router-link to='/renProp'>RenderProps</router-link> |
       <router-link to='/property'>Property</router-link> |
       <router-link to='/state'>VuexTest</router-link> |
+      <router-link to='/lifecycleDes'>lifecycleDes</router-link> |
+      <br/>
+      <router-link to='/lifecycleUp'>lifecycleUp</router-link> |
+      <router-link to='/lifecycleDestroys'>lifecycleDestroy</router-link> |
     </nav>
     <ul>
       <li>
