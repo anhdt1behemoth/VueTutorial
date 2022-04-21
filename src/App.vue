@@ -26,6 +26,7 @@
       <router-link to='/hide'>Shop</router-link> |
       <router-link to='/renProp'>RenderProps</router-link> |
       <router-link to='/property'>Property</router-link> |
+      <router-link to='/state'>VuexTest</router-link> |
     </nav>
     <ul>
       <li>

@@ -161,6 +161,10 @@ const routes = [
         component: () => import('../views/ComponentTest/ExampleComponent.vue')
       },
       {
+        path: '/state',
+        component: () => import('../views/VueX/StateView.vue')
+      },
+      {
         path: '/users/:username',
         component: UserNested,
         children: [
