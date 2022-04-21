@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Destroy</h1>
+        <h1>LifeCycle mount</h1>
     </div>
 </template>
 <script>

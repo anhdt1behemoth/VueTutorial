@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     btnClick () {
-      this.$emit('Click', 39483)
+      this.$emit('Click', 'xin chao ban!')
     }
   }
 }

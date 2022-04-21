@@ -22,6 +22,7 @@
       <router-link to='/watchC'>Watcher</router-link> |
       <router-link to='/componentT'>Component</router-link> |
       <router-link to='/props'>ComponentD</router-link> |
+      <router-link to='/props1'>ComponentU</router-link> |
       <router-link to='/shop'>Shop</router-link> |
       <router-link to='/hide'>Shop</router-link> |
       <router-link to='/renProp'>RenderProps</router-link> |
@@ -31,6 +32,7 @@
       <br/>
       <router-link to='/lifecycleUp'>lifecycleUp</router-link> |
       <router-link to='/lifecycleDestroys'>lifecycleDestroy</router-link> |
+      <router-link to='/lifecycleCreate'>lifecycleCreate</router-link> |
     </nav>
     <ul>
       <li>
@@ -45,12 +47,10 @@
     <router-link to="/users/eduardo">/users/eduardo</router-link>
     <br />
     <router-link to="/users/eduardo/profile"
-      >/users/eduardo/profile</router-link
-    >
+      >/users/eduardo/profile</router-link>
     <br />
     <router-link to="/users/eduardo/posts">/users/eduardo/posts</router-link>
   </p>
-  <router-view></router-view>
     <router-view/>
   </div>
 </template>

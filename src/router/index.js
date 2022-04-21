@@ -109,6 +109,10 @@ const routes = [
     component: () => import('../views/Lifecycle/LifecycleDestroy.vue')
   },
   {
+    path: '/lifecycleCreate',
+    component: () => import('../views/Lifecycle/LifecycleCreate.vue')
+  },
+  {
     path: '/settings',
     component: UserSettings,
     children: [
