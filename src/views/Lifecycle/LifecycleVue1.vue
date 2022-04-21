@@ -17,7 +17,7 @@ export default {
   },
   beforeUpdate () {
     console.log('As this point, Virtual DOM has not re - rendered or pathched yet.')
-    console.log(this.counter)
+    console.log(+this.$refs['example-element'].textContent === this.counter)
   }
 }
 </script>
